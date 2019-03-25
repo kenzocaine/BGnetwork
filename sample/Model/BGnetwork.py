@@ -1,12 +1,9 @@
 import sys
 sys.path.insert(0, "/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/")
 import nest
-from sample.BGnodes import BGnodes
+import BGnodes
 import numpy as np
 import sample.tls as tls
-
-
-
 
 
 class BGnetwork(BGnodes):
