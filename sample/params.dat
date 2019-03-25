@@ -1,0 +1,343 @@
+{
+    "D1": {
+        "C_m": 200.0,
+        "E_ex": 0.0,
+        "E_in": -64.0,
+        "I_e": 350.0,
+        "V_m": -80.0,
+        "V_th": -45.0,
+        "g_L": 12.5,
+        "tau_syn_ex": 2.0,
+        "tau_syn_in": 2.0
+    },
+    "D2": {
+        "C_m": 200.0,
+        "E_ex": 0.0,
+        "E_in": -64.0,
+        "I_e": 350.0,
+        "V_m": -80.0,
+        "V_th": -45.0,
+        "g_L": 12.5,
+        "tau_syn_ex": 2.0,
+        "tau_syn_in": 2.0
+    },
+    "FSN": {
+        "C_m": 500.0,
+        "E_ex": 0.0,
+        "E_in": -76.0,
+        "I_e": 500.0,
+        "V_m": -80.0,
+        "V_th": -54.0,
+        "g_L": 25.0,
+        "tau_syn_ex": 2.0,
+        "tau_syn_in": 2.0
+    },
+    "GPI": {
+        "C_m": 80.0,
+        "Delta_T": 1.8,
+        "E_L": -55.8,
+        "I_e": 15.0,
+        "V_peak": 20.0,
+        "V_reset": -65.0,
+        "V_th": -55.2,
+        "a": 3.0,
+        "b": 200.0,
+        "g_L": 3.0,
+        "tau_w": 20.0
+    },
+    "GPTA": {
+        "C_m": 60.0,
+        "Delta_T": 2.55,
+        "E_L": -55.1,
+        "I_e": 1.0,
+        "V_peak": 15.0,
+        "V_reset": -60.0,
+        "V_th": -54.7,
+        "a": 2.5,
+        "b": 105.0,
+        "g_L": 1.0,
+        "tau_w": 20.0
+    },
+    "GPTI": {
+        "C_m": 40.0,
+        "Delta_T": 1.7,
+        "E_L": -55.1,
+        "I_e": 12.0,
+        "V_peak": 15.0,
+        "V_reset": -60.0,
+        "V_th": -54.7,
+        "a": 2.5,
+        "b": 70.0,
+        "g_L": 1.0,
+        "tau_w": 20.0
+    },
+    "STN": {
+        "C_m": 60.0,
+        "Delta_T": 16.2,
+        "E_L": -80.2,
+        "I_e": 5.0,
+        "V_peak": 15.0,
+        "V_reset": -70.0,
+        "V_th": -64.0,
+        "a": 0.3,
+        "b": 0.05,
+        "g_L": 10.0,
+        "tau_w": 333.0
+    }
+}{
+    "D1": 5000,
+    "D2": 5000,
+    "FSN": 210.55542387611598,
+    "GPI": 1508,
+    "GPTA": 658,
+    "GPTI": 1976,
+    "STN": 776
+}{
+    "D1": {
+        "D1": 728.0,
+        "D2": 784.0,
+        "FSN": 32.0,
+        "GPTA": 20.0
+    },
+    "D2": {
+        "D1": 168.0,
+        "D2": 1008.0,
+        "FSN": 22.0,
+        "GPTA": 20.0
+    },
+    "FSN": {
+        "FSN": 20.0,
+        "GPTA": 20.0,
+        "GPTI": 20.0
+    },
+    "GPI": {
+        "D1": 1000.0,
+        "GPTI": 64.0,
+        "STN": 60.0
+    },
+    "GPTA": {
+        "GPTA": 10.0,
+        "GPTI": 50.0,
+        "STN": 60.0
+    },
+    "GPTI": {
+        "D2": 1000.0,
+        "GPTA": 10.0,
+        "GPTI": 50.0,
+        "STN": 60.0
+    },
+    "STN": {
+        "GPTI": 60.0
+    }
+}{
+    "D1": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "D2": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "FSN": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "GPI": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "GPTA": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "GPTI": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    },
+    "STN": {
+        "D1": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "D2": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "FSN": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTA": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "GPTI": {
+            "delay": 1.0,
+            "weight": 1.0
+        },
+        "STN": {
+            "delay": 1.0,
+            "weight": 1.0
+        }
+    }
+}
