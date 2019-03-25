@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 from itertools import product
 from collections import Counter
 
-
 class BGnodes:
 	def __init__(self,nparam, pparam = True):
 		# nparam must be a dictionary of the form nparam = {"neuron" : {"param1": var, "param2" : var}}
