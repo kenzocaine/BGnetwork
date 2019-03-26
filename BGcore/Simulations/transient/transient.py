@@ -20,13 +20,13 @@ class transient(BGnetwork):
 	def impulseD1(self,start,stop):
 		# Connect impulse poisson generator to D1 for 20 ms
 		# 
-		self.trans_noiseID['D1'] = nest.Create("poisson_generator",1,{'rate' : 2900.0, 'start':start,'stop':stop})
+		self.trans_noiseID['D1'] = nest.Create("poisson_generator",1,{'rate' : 900.0, 'start':start,'stop':stop})
 		nest.Connect(self.trans_noiseID['D1'],self.nID['D1'], 'all_to_all',self.synparamNoise['D1'])
 		print('Connected transient poisson to D1')
 
 
 	def impulseD2(self, start,stop):
-		self.trans_noiseID['D2'] = nest.Create("poisson_generator",1,{'rate' : 2900.0, 'start':start,'stop':stop})
+		self.trans_noiseID['D2'] = nest.Create("poisson_generator",1,{'rate' : 900.0, 'start':start,'stop':stop})
 		nest.Connect(self.trans_noiseID['D2'],self.nID['D2'], 'all_to_all',self.synparamNoise['D2'])
 		print('Connected transient poisson to D2')
 
@@ -43,8 +43,8 @@ nest.SetKernelStatus({'data_path': '/Users/kimhedelin/Google Drive/VT18/Neurosci
 trans = transient(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
 trans.connectSpikeDet()
 trans.setIe(0.0)
-trans.impulseD1(1000.0,1020.0)
-trans.impulseD2(1000.0,1020.0)
+trans.impulseD1(1000.0,1030.0)
+trans.impulseD2(1000.0,1030.0)
 trans.simulate(1500.0)
 
 
