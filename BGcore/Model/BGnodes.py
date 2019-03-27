@@ -1,3 +1,6 @@
+# Base model class where all other classes should be derived from
+# BGnodes take two arguments : nparam = neuron parameters (dictionary), pparam = population parameters (dictionary)
+
 import sys
 sys.path.insert(0, "/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/")
 import BGcore.tls as tls
