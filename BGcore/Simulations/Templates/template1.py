@@ -20,7 +20,7 @@ import numpy as np
 class myclass(BGnetwork):
 	def __init__(self,nparam,cparam,synparam, noise,synparamNoise, connections, pparam=True):
 		# All arguments are sent to the parent class BGnetwork
-		super().__init__(nparam,cparam,synparam, noise,synparamNoise, connections, pparam)
+		super().__init__(nparam,cparam,synparam, noise, synparamNoise, connections, pparam)
 
 
 	def myMethod(self):
@@ -33,7 +33,7 @@ class myclass(BGnetwork):
 # Start by reseting the kernel
 nest.ResetKernel()
 
-# Create a class with chosen parameters from param
+# Create a class with chosen parameters from param. 
 mySetup1 = myclass(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
 
 # Specify folder where data should be writen to
@@ -44,7 +44,7 @@ mySetup1.connectSpikeDet()
 mySetup1.setIe(0.0)
 
 # Perform any other operation on the class based on what methods you specified
-# 
+# You can put any operation in a loop, for example changing the poisson rate for a specific node
 # 
 
 # Simulate
