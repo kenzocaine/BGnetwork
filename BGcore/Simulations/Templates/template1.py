@@ -1,6 +1,7 @@
 import sys
 import os
-sys.path.insert(0, "/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/") # Always specify the path of your working environment
+# Always specify the path of your working environment
+sys.path.insert(0, "/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/") 
 
 # Import the base modules BGnodes and BGnetwork (or just BGnodes if you wish not connect anything in your setup)
 import BGcore.Model.BGnodes
@@ -30,10 +31,12 @@ class myclass(BGnetwork):
 
 
 
-# Start by reseting the kernel
+# Start by reseting the kernel. Always perform this operation before creating any new class
 nest.ResetKernel()
 
-# Create a class with chosen parameters from param. 
+# Create a class with chosen parameters from param. Do NOT create more than one class since NEST can only simulate one set-up at a given time
+# If you want to create an aditional class with different parameters make sure to reset the kernel and specify a new path for your data to be writen
+# Do all this AFTER you have simulated the first class if you don't wanna loose any changes. 
 mySetup1 = myclass(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
 
 # Specify folder where data should be writen to
