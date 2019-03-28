@@ -36,16 +36,31 @@ class transient(BGnetwork):
 # Record spike trains from all nodes
 # 
 
+setup1 = True
 
-nest.ResetKernel()
-nest.SetKernelStatus({'data_path': '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data/', 'overwrite_files':True})
+if setup1: 
+	nest.ResetKernel()
+	nest.SetKernelStatus({'data_path': '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data/', 'overwrite_files':True})
 
-trans = transient(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
-trans.connectSpikeDet()
-trans.setIe(0.0)
-trans.impulseD1(1000.0,1030.0)
-trans.impulseD2(1000.0,1030.0)
-trans.simulate(1500.0)
+	trans = transient(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
+	trans.connectSpikeDet()
+	trans.setIe(0.0)
+	trans.impulseD1(1000.0,1030.0)
+	trans.impulseD2(1000.0,1030.0)
+	trans.simulate(1500.0)
+
+setup2 = True
+
+if setup2: 
+	nest.ResetKernel()
+	nest.SetKernelStatus({'data_path': '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data2/', 'overwrite_files':True})
+
+	trans = transient(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
+	trans.connectSpikeDet()
+	trans.setIe(0.0)
+	trans.impulseD1(1000.0,1030.0)
+	trans.impulseD2(1000.0,1030.0)
+	trans.simulate(1500.0)
 
 
 
