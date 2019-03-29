@@ -96,7 +96,7 @@ dynsyn = {
 # Static syn parameters
 staticsyn = {   
                 'D1' : {
-                        'D1' : {'weight': -0.075, 'delay': 1.7}, 
+                        'D1' : {'model': 'tsodyks_synapse', 'weight': -0.075, 'delay': 1.7}, 
                         'D2': {'weight': -0.150, 'delay': 1.7}, 
                         'FSN': {'weight': -2.0, 'delay': 1.7}, 
                         'GPTA': {'weight': -0.02, 'delay': 7.0}, 

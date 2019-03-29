@@ -23,7 +23,7 @@ class BGnodes:
 		self.nModel = {"D1" :"iaf_cond_alpha" , "D2" : "iaf_cond_alpha", "FSN" : "iaf_cond_alpha", 
 					  "GPI" : "aeif_cond_exp", "GPTA" : "aeif_cond_exp", "GPTI" : "aeif_cond_exp", "STN" : "aeif_cond_exp"}
 
-		nest.SetDefaults('aeif_cond_exp',{'gsl_error_tol': 1e-06})
+		#nest.SetDefaults('aeif_cond_exp',{'gsl_error_tol': 1e-06})
 		for ID in self.nID :
 			if pparam == True:
 				self.nID[ID] = nest.Create(self.nModel[ID],1,nparam[ID])
@@ -37,7 +37,7 @@ class BGnodes:
 
 
 
-	def connectMultimeter(self,recordG = False):
+	def connectMultimeter(self,recordG = False): # Old, dont use this
 		# Connects multimeter that records from V_m. Todo: record from other parameters as well
 		if not recordG:
 			self.multimeter = nest.Create("multimeter")
@@ -58,7 +58,7 @@ class BGnodes:
 		if not recordG:
 			for ID in self.nID:
 				self.multiID[ID] = nest.Create('multimeter')
-				nest.SetStatus(self.multiID[ID],{'label' : ID, 'withtime': True,'record_from': ['V_m','g_ex','g_in']})
+				nest.SetStatus(self.multiID[ID],{'label' : ID, 'withtime': True,'record_from': ['V_m','g_ex','g_in'],'to_file' : True})
 				if kwargs['to_file']:
 					nest.SetStatus(self.multiID[ID],{'to_file':True})
 				nest.Connect(self.multiID[ID], self.nID[ID])
@@ -237,7 +237,7 @@ class BGnodes:
 			self.count = Counter(evs)
 			self.freq[ID] = self.count[self.nID[ID][0]]
 
-	def setIe(self,I_e,device = 1):
+	def setIe(self,I_e,device = 1): # Set constant input current
 		if device ==1:
 			for ID in self.nID:
 				nest.SetStatus(self.nID[ID],{"I_e" : float(I_e)})
