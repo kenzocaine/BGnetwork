@@ -51,24 +51,7 @@ staticsynNoise = {
             'GPI' : {'weight' : {'distribution': 'uniform', 'low': 3.4, 'high': 3.5},'delay':1}
 }
 
-dynamicsynNoise = {
-            'D1' : {'weight' : {'distribution': 'uniform', 'low': STRinputL, 'high': STRinputH},'delay':1, "tau_psc": Tau_psc,
-             "tau_rec": Tau_rec,
-             "tau_fac": Tau_fac,
-             "U": U,
-             "delay": 0.1,
-             "weight": A,
-             "u": 0.0,
-             "x": 1.0},
-            'D2' : {'weight' : {'distribution': 'uniform', 'low': STRinputL, 'high': STRinputH},'delay':1},
-            'FSN' : {'weight' : {'distribution': 'uniform', 'low': STRinputL, 'high': STRinputH},'delay':1},
-            'STN' : {'weight' : {'distribution': 'uniform', 'low': 1.0, 'high': 1.1},'delay':1},
-            'GPTA' : {'weight' : {'distribution': 'uniform', 'low': 0.8, 'high': 1.1},'delay':1},
-            'GPTI' : {'weight' : {'distribution': 'uniform', 'low': 1.1, 'high': 1.5},'delay':1},
-            'GPI' : {'weight' : {'distribution': 'uniform', 'low': 3.4, 'high': 3.5},'delay':1}
-    
 
-}
 
 
 
@@ -85,12 +68,7 @@ connections = {
 
 
 
-Tau_rec = 3
-dynsyn = {
-    'D1' : { 'weight' : 1, 'tau_rec' : Tau_rec},
 
-
-}
 
 
 # Static syn parameters

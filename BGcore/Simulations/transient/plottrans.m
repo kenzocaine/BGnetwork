@@ -1,5 +1,5 @@
 clear all
-path = '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data/';
+path = '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data2/';
 %path = fullfile(root(n).folder,root(n).name)
 
 [dataX, dataY] = loadtrans(path);

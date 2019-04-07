@@ -36,7 +36,8 @@ class transient(BGnetwork):
 # Record spike trains from all nodes
 # 
 
-setup1 = True
+setup1 = False
+
 
 if setup1: 
 	nest.ResetKernel()
@@ -58,9 +59,9 @@ if setup2:
 	trans = transient(param.nparam, param.cparam, param.staticsyn, param.noise,param.staticsynNoise, param.connections,param.pparam)
 	trans.connectSpikeDet()
 	trans.setIe(0.0)
-	trans.impulseD1(1000.0,1030.0)
 	trans.impulseD2(1000.0,1030.0)
 	trans.simulate(1500.0)
+
 
 
 
