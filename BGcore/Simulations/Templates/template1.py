@@ -25,6 +25,7 @@ class myclass(BGnetwork):
 
 
 	def myMethod(self):
+		return
 		# Here you can specify any function using the nest library, specific to your setup
 
 

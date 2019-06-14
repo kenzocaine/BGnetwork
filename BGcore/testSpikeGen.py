@@ -22,11 +22,6 @@ class testSpikeGen(BGnodes):
 
 
 
-
-
-
-
-
 if __name__ == '__main__':
 	cparam = tls.importParam()
 	pparam = { "GPTA" : None, "GPTI" : None, "STN" : None, "GPI" : None, "D1" : None, "D2": None, "FSN" : None}

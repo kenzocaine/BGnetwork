@@ -51,6 +51,10 @@ staticsynNoise = {
             'GPI' : {'weight' : {'distribution': 'uniform', 'low': 3.4, 'high': 3.5},'delay':1}
 }
 
+Tau_rec = 1
+Tau_fac = 1
+
+
 dynamicsynNoise = {
             'D1' : {'weight' : {'distribution': 'uniform', 'low': STRinputL, 'high': STRinputH},'delay':1, "tau_psc": Tau_psc,
              "tau_rec": Tau_rec,

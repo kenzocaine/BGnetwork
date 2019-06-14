@@ -1,5 +1,5 @@
 clear all
-path = '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data2/';
+path = '/Users/kimhedelin/Google Drive/VT18/Neuroscience/simulation/BGnetwork/BGcore/Simulations/transient/data3/';
 %path = fullfile(root(n).folder,root(n).name)
 
 [dataX, dataY] = loadtrans(path);
@@ -42,3 +42,6 @@ GPIh = histogram(dataX.GPI,nbins);
 GPI = GPIh.Values;
 GPIz=zscore(GPIh.Values);
 title('GPI')
+%%
+[xc,lags] = xcorr(STN(100:900)-mean(STN),GPTI(100:900)-mean(GPTI),'coeff');
+stem(lags,xc)
